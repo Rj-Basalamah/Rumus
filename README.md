@@ -3,7 +3,7 @@
 
 <h1 align="center">
     🖼️Smart people🖼️
-Author : Abdur Ro'uf 
+#####Author : Abdur Ro'uf 
 
 #### Fitures
 ```
