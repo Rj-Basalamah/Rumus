@@ -2354,8 +2354,6 @@ def access(option):
         name = input("Email\t: ")
         password = input("Sandi\t: ")
         login(name,password)
-    elif(option=="3"):
-    	admin () 
     elif(option=="2"):
         wel = '# MASUKKAN EMAIL & SANDI BARU UNTUK MENDAFTAR' 
         wel2 = mark(wel, style='cyan')
@@ -2379,25 +2377,17 @@ def begin():
     wel = '# HALAMAN LOGIN' 
     wel2 = mark(wel, style='cyan')
     sol().print(wel2)
-    io =  ' 1. Masuk \n 2. Mendaftar\n 3. Gunakan akun admin' 
+    io =  ' 1. Masuk \n 2. Mendaftar\n' 
     oi = nel(io, style='cyan')
     cetak(nel(oi, title='[MENU]', style='green' ))
     io ='[white]Jika anda belum mendaftar. Silahkan pilih no[green] 2 [white]untuk mendaftar' 
     cetak(nel(io, style='cyan')) 
     #cetak(nel(oi, style='cyan')) 
     option = input("Pilih : ")
-    if(option!="1" and option!="3" and option!="2"):
+    if(option!="1" and option!="2"):
     	begin()
         
-def admin () :
-	rouf = '[magenta]- Email\t[white]: [green]Admin@rjbgroup.com\n[magenta]- Sandi\t[white]: [green]admin123' 
-	rouf_jevianz = nel(rouf, style='cyan') ; loading1 ()
-	cetak(nel(rouf_jevianz, title='[underline][italic][Official Akun]', style='green' ))
-	rjb = input(u+'['+h+' ENTER '+u+']') 
-	if rjb in _rjBasalamah_1_ :
-		os.system('python Rumus.py')
-	else:
-		os.system('python Rumus.py')
+
 def mulai () :
 	io = 'Enter untuk menjalankan script kembali' 
 	oi = mark(io, style='white')
