@@ -2314,80 +2314,6 @@ def jawaban (rouf) :
 def pertama (rouf) :
 	rouf_jevianz = nel(rouf, style='yellow') ; loading1 ()
 	cetak(nel(rouf_jevianz, title='[Jawaban]', style='green' ))
-def login(name,password):
-    sukses = False
-    sandi = False
-    file = open("logindatabase.txt","r")
-    for i in file:
-         a,b = i.split(",")
-         b = b.strip()
-         if(a==name and b==password):
-             sukses = True
-             break
-    file.close()
-    file = open("logindatabase.txt","r")
-    for j in file:
-         a,b = j.split(",")
-         b = b.strip()
-         if(a==name and b!=password):
-         	print ('\r\n\t Keterangan Sandi salah') 
-    file.close()
-    if(sukses):
-        io = 'Berhasil masuk, Anda akan di arahkan ke menu' 
-        oi = mark(io, style='white') ; loading1 ()
-        cetak(nel(oi, style='cyan'));jeda(2);menu()
-    else:
-        io = 'Anda belum terdaftar, Silahlan mendaftar dulu' 
-        oi = mark(io, style='white') ; loading1 ()
-        cetak(nel(oi, style='red'));jeda(2), os.system('python Rumus.py')  
-    if(sandi) :
-    	print ('sandi salah') 
-def register(name,password):
-    file = open("logindatabase.txt","a")
-    file.write("\n"+name+","+password)
-def access(option):
-    global name
-    if(option=="1"):
-        wel = '# MASUKKAN EMAIL & SANDI' 
-        wel2 = mark(wel, style='cyan')
-        sol().print(wel2)
-        name = input("Email\t: ")
-        password = input("Sandi\t: ")
-        login(name,password)
-    elif(option=="2"):
-        wel = '# MASUKKAN EMAIL & SANDI BARU UNTUK MENDAFTAR' 
-        wel2 = mark(wel, style='cyan')
-        sol().print(wel2)
-        name = input("Email\t: ")
-        password = input("Sandi\t: ")
-        register(name,password)
-        io = 'Berhasil mendaftar, Silahkan masuk sekarang' 
-        oi = mark(io, style='white') ; loading1 ()
-        cetak(nel(oi, style='green'));jeda(3), os.system('python Rumus.py')
-    else :
-    	os.system('python Rumus.py')
-        
-def begin():
-    global option
-    os.system ('clear') 
-    wel = '# WELCOME TO RJB \n Copyright © 2022'
-    wel1 = mark(wel, style='red')
-    wel2 = nel(wel1, style='red') 
-    sol().print(wel2, style='on cyan') 
-    wel = '# HALAMAN LOGIN' 
-    wel2 = mark(wel, style='cyan')
-    sol().print(wel2)
-    io =  ' 1. Masuk \n 2. Mendaftar\n' 
-    oi = nel(io, style='cyan')
-    cetak(nel(oi, title='[MENU]', style='green' ))
-    io ='[white]Jika anda belum mendaftar. Silahkan pilih no[green] 2 [white]untuk mendaftar' 
-    cetak(nel(io, style='cyan')) 
-    #cetak(nel(oi, style='cyan')) 
-    option = input("Pilih : ")
-    if(option!="1" and option!="2"):
-    	begin()
-        
-
 def mulai () :
 	io = 'Enter untuk menjalankan script kembali' 
 	oi = mark(io, style='white')
@@ -2398,6 +2324,4 @@ def mulai () :
 	else:
 		menu () 
 			
-	
-begin()
-access(option) 
+menu () 
