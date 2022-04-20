@@ -6,9 +6,9 @@
 
 
 
-####Author 
+
 ```
-Abdur Ro'uf 
+Author : Abdur Ro'uf 
 ```
 #### Fitures
 ```
