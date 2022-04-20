@@ -37,6 +37,8 @@ lalu buka aplikasinya ketikan perintah dibawah ini.
   $ cd Rumus
   $ python Rumus.py
  ```
+#### ⇨  Screenshot
+![Premium Dapunta (1)](https://user-images.githubusercontent.com/76211798/128638195-04fcbc38-de70-4b74-8bb0-c9ccdbeea2a0.jpg)
 ##### MY SOCIAL MEDIA
 [![](https://img.shields.io/badge/Github-black?logo=Github&logoColor=black&labelColor=white)](https://github.com/Rj-Basalamah) 
 [![](https://img.shields.io/badge/Twitter-blue?logo=Twitter&logoColor=White&labelColor=white)](https://mobile.twitter.com/r_kecil)
