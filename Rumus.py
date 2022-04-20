@@ -2395,9 +2395,9 @@ def admin () :
 	cetak(nel(rouf_jevianz, title='[underline][italic][Official Akun]', style='green' ))
 	rjb = input(u+'['+h+' ENTER '+u+']') 
 	if rjb in _rjBasalamah_1_ :
-		begin () 
+		os.system('python Rumus.py')
 	else:
-		begin () 
+		os.system('python Rumus.py')
 def mulai () :
 	io = 'Enter untuk menjalankan script kembali' 
 	oi = mark(io, style='white')
