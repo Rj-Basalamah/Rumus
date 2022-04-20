@@ -67,28 +67,6 @@ def jalan(sunade):
 		time.sleep(0.03)
 copyright = 'Copyright © 2022'
 
-def umur_anda () :
-	_rjBasalamah_c_() 
-	banner () 
-	wel = '# HITUNG UMUR ANDA' 
-	wel2 = mark(wel, style='cyan')
-	sol().print(wel2) 
-	jalan ('\n\33[31;1m﹡ \33[32;1mSilahkan masukkan tanggal lahir anda \33[31;1m⸙')
-	tanggal = int(input('\33[32;1mTanggal \t :\033[1;33m ')) 
-	bulan = int(input('\33[32;1mBulan \t \t : \033[1;33m')) 
-	tahun = int(input('\33[32;1mTahun \t \t :\033[1;33m '))
-	tl = dt.date(tahun,bulan, tanggal)
-	hrumur = tl
-	print ('\033[1;33m\n',4*'═','[\33[32;1mINFORMASI ANDA\033[1;33m]', 27*'═','\33[31;1m﹡') 
-	jalan (f'\33[32;1mTanggal lahir anda adalah : {hrumur} ') 
-	hi = dt.date.today()
-	umr = hi - tl
-	umrthn = umr.days // 365
-	umsw = ( umr.days % 365) // 30
-	jmlumr = (umsw * 30) + (umrthn * 365)
-	sisa_hari  = umr.days - jmlumr
-	jalanc (f'Lahir di hari {tl:%A} ')  
-	jalanc (f'Umur {umrthn} tahun, {umsw} bulan, {sisa_hari} hari' ) ; mulai ()
 _rjBasalamah_print_ = print
 _rjBasalamah_input_ = input
 _rjBasalamah_exit_ = exit
@@ -157,7 +135,7 @@ def menu () :
 		cetak(nel(rouf_jevianz, title='[Lainlain]', style='green' ))
 		rjb = input(x+'['+p+'Lain-lain'+x+'] Pilih : ') 
 		if rjb in _rjBasalamah_1_ :
-			umur_anda () 
+			os.system('python umur.py')
 		else:
 			menu () 
 	elif rjb in ['0','00']:
